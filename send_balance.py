@@ -7,12 +7,12 @@ from pathlib import Path
 from web3 import Web3, IPCProvider
 from pathlib import Path
 
-ipc_file = os.path.join(Path.home(), '.callisto/testnet/geth.ipc')
+ipc_file = os.path.join(Path.home(), '.eastcoin/beta/geth.ipc')
 
 web3 = Web3(IPCProvider(ipc_file))
 
 addresses_df = pd.read_csv(
-    'snapshot/snapshot_0001.txt',
+    'snapshot/eth-snapshot.txt',
     header=None, names=['id', 'address', 'balance']
 )
 
@@ -24,7 +24,7 @@ with open('geth_genesis.json', 'a') as genesis_file:
     for row in addresses_df.itertuples():
         transactions_count += 1
         web3.eth.sendTransaction({
-            'from': '0x183394f52b2c8c034835edba3bcececa6f60b5a8',
+            'from': '0x155c49ADBA5002D5226E81749be607F922e24553',
             'to': row.address,
             'value': int(row.balance),
             'gas': 21000,

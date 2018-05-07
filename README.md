@@ -1,6 +1,6 @@
-# Callisto-Snapshot
+# EAST-Snapshot
 
-Callisto Snapshot script and result
+Eastcoin Snapshot script and result
 
 ## Requirements
 

@@ -1,12 +1,12 @@
 {
-  "name": "callisto-snapshot",
+  "name": "east-snapshot",
   "version": "1.0.0",
-  "description": "Callisto snapshot script",
+  "description": "Eastcoin snapshot script",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yohan Graterol",
+  "author": "East Coin",
   "license": "MIT",
   "dependencies": {
     "web3": "git+https://github.com/gobitfly/web3.js.git#develop"

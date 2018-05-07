@@ -1,8 +1,8 @@
 {
-  "name": "callisto-snapshot",
-  "description": "Callisto snapshot script",
+  "name": "east-snapshot-frontend",
+  "description": "Eastcoin snapshot script",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "East Coin",
   "dependencies": {
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
@@ -20,9 +20,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "deploy-gh": "gh-pages -d public",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"

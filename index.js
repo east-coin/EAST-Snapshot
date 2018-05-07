@@ -2,11 +2,9 @@ const net = require('net')
 const fs = require('fs')
 const Web3 = require('web3')
 
-const snapshotBlock = process.argv[2] || "5500000" // ETC block
+const snapshotBlock = process.argv[2] || "5570000" // ETH block
 
-// const ipcPath = process.env["HOME"] + "/.local/share/io.parity.ethereum/jsonrpc.ipc";
-
-const ipcPath = "/parity/jsonrpc.ipc"
+const ipcPath = process.env["HOME"] + "/.local/share/io.parity.ethereum/jsonrpc.ipc";
 
 let web3 = new Web3();
 web3.setProvider(new web3.providers.IpcProvider(ipcPath, net));

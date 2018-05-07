@@ -1,10 +1,10 @@
-# gatsby-starter-callisto 🤖
+# gatsby-starter-eastcoin 🤖
 
 ## Run on development environment
 
 ### To Use this starter just do:
 
-`gatsby new [SITE_DIRECTORY] git@github.com:EthereumCommonwealth/gatsby-starter-callisto.git`
+`gatsby new [SITE_DIRECTORY] git@github.com:east-coin/gatsby-starter-eastcoin.git`
 
 ### Install dependencies
 

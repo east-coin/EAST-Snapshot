@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from '../images/clo-logo.png'
+import logo from '../images/east-logo.png'
 
 let web3;
 
@@ -8,7 +8,7 @@ if (typeof window !== 'undefined') {
   if (typeof web3 !== 'undefined') {
     web3 = new Web3(web3.currentProvider);
   } else {
-    web3 = new Web3(Web3.givenProvider || "https://clo-testnet3.0xinfra.com")
+    web3 = new Web3(Web3.givenProvider || "https://testnet-node.easthub.io")
   }
 }
 
@@ -67,7 +67,7 @@ class Snapshot extends Component {
             <img src={logo} className="App-logo" alt="logo" />
           </header>
           <h1 className="App-title" >AirDrop Balance Checker</h1>
-          <p className="App-intro">This is the Callisto Snapshot system for testnet</p>
+          <p className="App-intro">This is the Eastcoin Snapshot system for testnet</p>
           <form className="App-form" onSubmit={this.onSubmit}>
             <input
               className="App-form-input"
@@ -84,12 +84,12 @@ class Snapshot extends Component {
             }}>Submit</a>
           </form>
           {this.state.showSpinner ? <i className="fas fa-circle-notch fa-spin fa-3x fa-fw App-Spinner" /> : null}
-          {this.state.message ? <p className="App-message">Your Callisto Balance is: {this.state.message} CLO</p> : null}
+          {this.state.message ? <p className="App-message">Your Eastcoin Balance is: {this.state.message} EAST</p> : null}
           {this.state.error ? <p className="App-error">{this.state.error}</p> : null}
         </div>
         <footer className="Footer" key="footer">
           <a
-            href="https://github.com/EthereumCommonwealth/Callisto-Snapshot"
+            href="https://github.com/east-coin/EAST-Snapshot"
             target="_blank"
             className="Footer-Link"
             rel="noopener noreferrer"
